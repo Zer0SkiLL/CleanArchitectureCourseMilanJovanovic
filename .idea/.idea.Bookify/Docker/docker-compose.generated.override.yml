@@ -6,16 +6,32 @@ services:
       context: "D:\\Projects\\CleanArchitectureCourseMilan"
       dockerfile: "src/Bookify.Api/Dockerfile"
       target: "base"
+      args:
+        BUILD_CONFIGURATION: "Debug"
     command: []
     entrypoint:
-    - "dotnet"
-    - "/app/bin/Debug/net8.0/Bookify.Api.dll"
+    - "/opt/rider-debugger/linux-x64/JetBrains.Debugger.Worker"
+    - "--runtimeconfig"
+    - "/opt/rider-debugger/JetBrains.Debugger.Worker.runtimeconfig.json"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    - "--timeout=60"
     environment:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      RIDER_DEBUGGER_LOG_DIR: "/var/opt/rider-debugger"
+      RESHARPER_LOG_CONF: "/etc/opt/rider-debugger/backend-log.xml"
     image: "bookifyapi:dev"
-    ports: []
+    ports:
+    - "127.0.0.1:57000:57100"
+    - "127.0.0.1:57200:57300"
     volumes:
     - "C:\\Users\\RWM\\.nuget\\packages:/home/app/.nuget/packages"
     - "D:\\Projects\\CleanArchitectureCourseMilan\\src\\Bookify.Api:/app:rw"
     - "D:\\Projects\\CleanArchitectureCourseMilan:/src:rw"
+    - "C:\\Users\\RWM\\AppData\\Local\\JetBrains\\RiderRemoteDebugger\\2024.2.4\\\
+      Linux64:/opt/rider-debugger"
+    - "C:\\Program Files\\JetBrains\\JetBrains Rider 2024.2.4\\bin:/etc/opt/rider-debugger/backend-log.xml"
+    - "C:\\Users\\RWM\\AppData\\Local\\JetBrains\\Rider2024.2\\log\\DebuggerWorker\\\
+      JetBrains.Debugger.Worker.2024_9_16_16_49_29:/var/opt/rider-debugger:rw"
     working_dir: "/app"
