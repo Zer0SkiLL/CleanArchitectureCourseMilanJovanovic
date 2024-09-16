@@ -17,3 +17,23 @@ D:\Courses\MJ_CleanCode\06 - Authorization\start\Bookify\src\Bookify.Infrastruct
 D:\Courses\MJ_CleanCode\06 - Authorization\start\Bookify\src\Bookify.Infrastructure\obj\Debug\net8.0\ref\Bookify.Infrastructure.dll
 D:\Courses\MJ_CleanCode\06 - Authorization\start\Bookify\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Infrastructure.runtimeconfig.json
 D:\Courses\MJ_CleanCode\06 - Authorization\start\Bookify\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.genruntimeconfig.cache
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Infrastructure.deps.json
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Infrastructure.runtimeconfig.json
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Infrastructure.dll
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Infrastructure.pdb
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Application.dll
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Domain.dll
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Application.pdb
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\bin\Debug\net8.0\Bookify.Domain.pdb
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.csproj.AssemblyReference.cache
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.AssemblyInfo.cs
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.sourcelink.json
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify..D02210A3.Up2Date
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.dll
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\refint\Bookify.Infrastructure.dll
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.pdb
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\Bookify.Infrastructure.genruntimeconfig.cache
+D:\Projects\CleanArchitectureCourseMilan\src\Bookify.Infrastructure\obj\Debug\net8.0\ref\Bookify.Infrastructure.dll

@@ -3398,11 +3398,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Courses\\MJ_CleanCode\\06 - Authorization\\start\\Bookify\\src\\Bookify.Api\\Bookify.Api.csproj",
+      "projectUniqueName": "D:\\Projects\\CleanArchitectureCourseMilan\\src\\Bookify.Api\\Bookify.Api.csproj",
       "projectName": "Bookify.Api",
-      "projectPath": "D:\\Courses\\MJ_CleanCode\\06 - Authorization\\start\\Bookify\\src\\Bookify.Api\\Bookify.Api.csproj",
+      "projectPath": "D:\\Projects\\CleanArchitectureCourseMilan\\src\\Bookify.Api\\Bookify.Api.csproj",
       "packagesPath": "C:\\Users\\RWM\\.nuget\\packages\\",
-      "outputPath": "D:\\Courses\\MJ_CleanCode\\06 - Authorization\\start\\Bookify\\src\\Bookify.Api\\obj\\",
+      "outputPath": "D:\\Projects\\CleanArchitectureCourseMilan\\src\\Bookify.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RWM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3420,8 +3420,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Courses\\MJ_CleanCode\\06 - Authorization\\start\\Bookify\\src\\Bookify.Infrastructure\\Bookify.Infrastructure.csproj": {
-              "projectPath": "D:\\Courses\\MJ_CleanCode\\06 - Authorization\\start\\Bookify\\src\\Bookify.Infrastructure\\Bookify.Infrastructure.csproj"
+            "D:\\Projects\\CleanArchitectureCourseMilan\\src\\Bookify.Infrastructure\\Bookify.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\CleanArchitectureCourseMilan\\src\\Bookify.Infrastructure\\Bookify.Infrastructure.csproj"
             }
           }
         }
