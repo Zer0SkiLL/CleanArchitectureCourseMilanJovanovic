@@ -22,8 +22,8 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("me")]
-    // [Authorize(Roles = Roles.Registered)]
-    [HasPermission(Permissions.UsersRead)]
+    [Authorize(Roles = Roles.Registered)]
+    //[HasPermission(Permissions.UsersRead)]
     public async Task<IActionResult> GetLoggedInUserV1(CancellationToken cancellationToken)
     {
         var query = new GetLoggedInUserQuery();
