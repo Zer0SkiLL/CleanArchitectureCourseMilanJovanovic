@@ -13,7 +13,7 @@ public class SearchApartmentsTests : BaseIntegrationTest
     [Fact]
     public async Task SearchApartments_ShouldReturnEmptyList_WhenDateRangeIsInvalid()
     {
-        // Arragen
+        // Arrange
         var query = new SearchApartmentsQuery(new DateOnly(2024, 1, 10), new DateOnly(2024, 1, 1));
         
         // Act
@@ -27,7 +27,7 @@ public class SearchApartmentsTests : BaseIntegrationTest
     [Fact]
     public async Task SearchApartments_ShouldReturnApartments_WhenDateRangeIsValid()
     {
-        // Arragen
+        // Arrange
         var query = new SearchApartmentsQuery(new DateOnly(2024, 1, 1), new DateOnly(2024, 1, 10));
         
         // Act
