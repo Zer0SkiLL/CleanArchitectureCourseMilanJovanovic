@@ -4,6 +4,7 @@ using Bookify.Application.IntegrationTests.UserContext;
 using Bookify.Infrastructure;
 using Bookify.Infrastructure.Authentication;
 using Bookify.Infrastructure.Data;
+using Dapper;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
@@ -36,7 +37,9 @@ public class IntegrationTestWebAppFactory : WebApplicationFactory<Program>, IAsy
             new FileInfo("/opt/keycloak/data/import/realm.json"))
         .WithCommand("--import-realm")
         .Build();
-    
+
+    // private readonly SeedData _seedData = new SeedData();
+
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.ConfigureTestServices(services =>
@@ -72,6 +75,7 @@ public class IntegrationTestWebAppFactory : WebApplicationFactory<Program>, IAsy
         await _dbContainer.StartAsync();
         await _redisContainer.StartAsync();
         await _keycloakContainer.StartAsync();
+        await SeedData.SeedTestData(Services);
     }
 
     public new async Task DisposeAsync()

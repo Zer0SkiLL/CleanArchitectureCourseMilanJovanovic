@@ -13,6 +13,14 @@ public static class SeedDataExtensions
 
         var sqlConnectionFactory = scope.ServiceProvider.GetRequiredService<ISqlConnectionFactory>();
         using var connection = sqlConnectionFactory.CreateConnection();
+        
+        // prevent unlimited apartments from being created
+        var apartmentsExist = connection.ExecuteScalar<int>("SELECT COUNT(*) FROM public.apartments") >= 100;
+
+        if (apartmentsExist)
+        {
+            return;
+        }
 
         var faker = new Faker();
 
@@ -46,22 +54,22 @@ public static class SeedDataExtensions
 
         connection.Execute(sql, apartments);
         
-        // Seed Users
-        var user = new
-        {
-            Id = Guid.Parse("00000000-0000-0000-0000-000000000001"),
-            IdentityId = "test-keycloak-id-1",
-            FirstName = "John",
-            LastName = "Doe",
-            Email = "john.doe@test.com"
-        };
-        
-        const string userSql = """
-                               INSERT INTO public.users
-                               (id, identity_id, first_name, last_name, email)
-                               VALUES(@Id, @IdentityId, @FirstName, @LastName, @Email);
-                               """;
-        
-        connection.Execute(userSql, user);
+    //     // Seed Users
+    //     var user = new
+    //     {
+    //         Id = Guid.Parse("00000000-0000-0000-0000-000000000001"),
+    //         IdentityId = "test-keycloak-id-1",
+    //         FirstName = "John",
+    //         LastName = "Doe",
+    //         Email = "john.doe@test.com"
+    //     };
+    //     
+    //     const string userSql = """
+    //                            INSERT INTO public.users
+    //                            (id, identity_id, first_name, last_name, email)
+    //                            VALUES(@Id, @IdentityId, @FirstName, @LastName, @Email);
+    //                            """;
+    //     
+    //     connection.Execute(userSql, user);
     }
 }
