@@ -55,13 +55,13 @@ public static class SeedDataExtensions
             LastName = "Doe",
             Email = "john.doe@test.com"
         };
-
+        
         const string userSql = """
                                INSERT INTO public.users
                                (id, identity_id, first_name, last_name, email)
                                VALUES(@Id, @IdentityId, @FirstName, @LastName, @Email);
                                """;
-
+        
         connection.Execute(userSql, user);
     }
 }
